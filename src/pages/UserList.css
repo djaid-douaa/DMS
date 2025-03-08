@@ -1,0 +1,112 @@
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  th {
+    background: lavender;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Trash Icon */
+  .trash-icon {
+    color: red !important;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 5px;
+  }
+  
+  .trash-icon:hover {
+    color: darkred !important;
+  }
+  
+  /* Button and Search Bar Positioning */
+  .search-add-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+    width: 100%;
+  }
+  
+  .search-field {
+    flex-grow: 1;
+    margin-right: 16px;
+  }
+  
+  .add-button {
+    background-color: #6B46C1 !important;
+    color: white !important;
+    white-space: nowrap;
+  }
+  
+  .add-button:hover {
+    background-color: #553C9A !important;
+  }
+  
+  /* Status Buttons */
+  .status {
+    border: 2px solid;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  
+  .status.active {
+    border-color: green;
+    color: green;
+  }
+  
+  .status.inactive {
+    border-color: #888;
+    color: #888;
+  }
+  
+  .status.pending {
+    border-color: #f0ad4e;
+    color: #f0ad4e;
+  }
+  
+  /* Form Input Spacing */
+  .form-container input {
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Table Header - Lavender Color */
+  table thead tr {
+    background-color: #E6E6FA !important;
+  }
+  
+  /* Input Spacing Fix */
+  input {
+    margin-bottom: 10px !important;
+  }
+  
+  /* Hide the search bar inside the Table component */
+.hide-table-search .MuiTextField-root,   /* For Material UI TextField */
+.hide-table-search input[type="text"],   /* For regular inputs */
+.hide-table-search input[type="search"],  /* For search inputs */
+.hide-table-search .search-container,    /* Common container class */
+.hide-table-search div > label:contains("Search") /* For label + input combos */ {
+  display: none !important;
+}
+
+/* If the search is in a specific container with a class */
+.hide-table-search .table-search-container,
+.hide-table-search form:first-child {
+  display: none !important;
+}

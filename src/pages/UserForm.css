@@ -1,0 +1,12 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1cm; /* Spacing between input fields */
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+  

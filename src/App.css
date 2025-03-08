@@ -1,0 +1,53 @@
+/* App.css */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+.navbar h1 {
+  font-size: 1.5rem;
+  color: #4b0082;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar li {
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: #4b0082;
+  cursor: pointer;
+}
+.sidebar li:hover {
+  background: #f3f3f3;
+  border-radius: 8px;
+}
+.sidebar .logout {
+  margin-top: auto;
+  color: red;
+  font-weight: bold;
+}
+
